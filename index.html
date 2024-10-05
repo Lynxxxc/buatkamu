@@ -889,13 +889,35 @@
         var t = setTimeout(startTime, 500);
         mytanggal();
         if (cari) {
-          if (h > 23) tulis("malam", "hayoo begadang,seharusnya kamu sudah bobo");
-          else if (h > 18) tulis("malam", "waktunya bocil bobo");
-          else if (h > 17) tulis("petang", "selamat menikmati senja");
-          else if (h > 14) tulis("sore", "gimana harinya tadi?");
-          else if (h > 13) tulis("siang", "tetap semangat");
-          else if (h > 9) tulis("siang", "selamat makan siang");
-          else if (h > 4) tulis("pagi", "selamat beraktivitas");
+          if (h > 23)
+            tulis(
+              "malam",
+              "hayoo begadang yaaa,seharusnya anak kecil sudah bobo"
+            );
+          else if (h > 21)
+            tulis(
+              "malam",
+              "apakah kamu sudah bobo?kalo belum ayo bobo,gabole begadang yaa"
+            );
+          else if (h > 18)
+            tulis(
+              "malam",
+              "apakah kamuu sudah mam sayang?kalo belum ayo mam duluuu"
+            );
+          else if (h > 16)
+            tulis("petang", "selamat menikmati senja,kalau keliatan ehe");
+          else if (h > 15)
+            tulis(
+              "sore",
+              "udah pulang sekolah?gimana tadi sekolahnya?ada yang mau di ceritain nda?"
+            );
+          else if (h > 11) tulis("siang", "jangan lupa makan siang ya sayang");
+          else if (h > 8) tulis("siang", "masih semangat kan sayang?");
+          else if (h > 4)
+            tulis(
+              "pagi",
+              "selamat pagiii sayang,selamat beraktivitas,semangat ya..."
+            );
           else tulis("malam", "hayoo begadang,seharusnya kamu sudah tidur");
           if (h > 18)
             document.querySelector("img").src = "source/media/wp1.png";
